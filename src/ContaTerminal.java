@@ -1,10 +1,11 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {    
-        //TODO: conhecer e importar a classe Scanner
+        //conhecer e importar a classe Scanner
         //Obter pelo scanner os valores digitados no terminal
-      Scanner dados = new Scanner(System.in);
+      Scanner dados = new Scanner(System.in).useLocale(Locale.US);
       System.out.println("Insira o numero da conta:");
       int numero = dados.nextInt();
       System.out.println("Insira a Agencia:" );
